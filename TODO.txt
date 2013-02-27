@@ -1,0 +1,3 @@
+
+- update to jetty-9 once java 7 exists in default beanstalk configuration
+- wire up setuid, exists in jetty-9 distro by default so ideally wait for that

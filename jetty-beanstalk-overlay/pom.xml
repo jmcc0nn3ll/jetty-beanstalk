@@ -8,8 +8,33 @@
   <artifactId>jetty-beanstalk-overlay</artifactId>
   <name>Jetty :: Amazon Beanstalk Overlay</name>
   <packaging>pom</packaging>
+  <properties>
+    <beanstalk-resource-url>https://oss.sonatype.org/service/local/artifact/maven/redirect?r=jetty-snapshots&amp;g=org.eclipse.jetty.beanstalk&amp;a=jetty-beanstalk-resources&amp;v=LATEST&amp;e=zip</beanstalk-resource-url>
+  </properties>
   <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+        <includes>
+          <include>**/*.config</include>
+        </includes>
+      </resource>
+    </resources>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.6</version>
+        <executions>
+          <execution>
+            <phase>validate</phase>
+            <goals>
+              <goal>resources</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
         <version>2.4</version>
