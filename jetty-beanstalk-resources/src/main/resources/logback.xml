@@ -9,7 +9,7 @@ http://logback.qos.ch/manual/configuration.html
   <appender name="FILE" class="ch.qos.logback.core.FileAppender">
     <file>${jetty.home}/logs/jetty.log</file>
     <encoder>
-      <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+      <pattern>%d [%thread] %-5level %logger{35} - %msg%n</pattern>
     </encoder>
   </appender>
  

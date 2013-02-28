@@ -43,10 +43,11 @@ echo "Creating ElasticBeanstalk Apache confs"
 </VirtualHost>
 EOELASTICBEANSTALKSITE
 
-
+#
 # Jetty logging
+#
 cat > /etc/logrotate.conf.elasticbeanstalk <<EOLOGROTATE
-/opt/jetty-8/logs/stderrout.log /opt/jetty-8/logs/request.log {
+/opt/jetty-8/logs/jetty.log {
     size 1M
     missingok
     rotate 5
