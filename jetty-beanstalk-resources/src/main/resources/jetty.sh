@@ -76,9 +76,12 @@
 # JETTY_ARGS
 #   The default arguments to pass to jetty.
 #
-JETTY_USER=jetty
+#JETTY_USER=jetty
 #   if set, then used as a username to run the server as
 #
+
+JETTY_RUN=/var/run
+JETTY_PID=/var/run/jetty.pid
 
 usage()
 {
@@ -359,9 +362,8 @@ esac
 #####################################################
 # source instance specific config file
 #####################################################
-if [ -r "/etc/sysconfig/${NAME}" ]; then
-    . /etc/sysconfig/${NAME}
-fi
+. /etc/sysconfig/jetty8
+
 # add sources JAVA_OPTS to JAVA_OPTIONS
 JAVA_OPTIONS+=$JAVA_OPTS
 
