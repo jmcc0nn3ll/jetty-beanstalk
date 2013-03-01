@@ -3,6 +3,11 @@ jetty-beanstalk
 
 Configuration for Amazon Beanstalk
 
+NOTE: this configuration has been tested with:
+
+* 32 bit Amazon Linux running Tomcat 7 
+
+
 This repo is configured with three different Maven modules.
 
  - jetty-beanstalk-overlay

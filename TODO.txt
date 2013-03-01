@@ -1,3 +1,5 @@
 
 - update to jetty-9 once java 7 exists in default beanstalk configuration
 - wire up setuid, exists in jetty-9 distro by default so ideally wait for that
+- if we want to enable request logs and have logrotate work on then we need to 
+  add support for that in jetty
