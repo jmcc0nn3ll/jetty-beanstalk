@@ -370,7 +370,7 @@ fi
 #####################################################
 # source instance specific config file
 #####################################################
-. /etc/sysconfig/jetty8
+. /etc/sysconfig/jetty9
 
 # add sources JAVA_OPTS to JAVA_OPTIONS
 JAVA_OPTIONS+=$JAVA_OPTS
