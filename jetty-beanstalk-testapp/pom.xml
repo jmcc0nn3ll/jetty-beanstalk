@@ -27,7 +27,7 @@
                 <artifactItem>
                   <groupId>org.eclipse.jetty</groupId>
                   <artifactId>test-jetty-webapp</artifactId>
-                  <version>${jetty-version}</version>
+                  <version>9.0.4-SNAPSHOT</version>
                   <type>war</type>
                   <overWrite>true</overWrite>
                   <outputDirectory>${test-assembly-dir}/</outputDirectory>

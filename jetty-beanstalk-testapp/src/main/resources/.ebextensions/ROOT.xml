@@ -27,7 +27,7 @@ detected.
   <Set name="extractWAR">false</Set>
   <Set name="copyWebDir">false</Set>
   <Set name="defaultsDescriptor"><SystemProperty name="jetty.home" default="."/>/etc/webdefault.xml</Set>
-  <Set name="overrideDescriptor"><SystemProperty name="jetty.home" default="."/>/contexts/ROOT.d/override-web.xml</Set>
+  <Set name="overrideDescriptor"><SystemProperty name="jetty.home" default="."/>/webapps/ROOT.d/override-web.xml</Set>
 
   <!-- Allow directory symbolic links  -->
   <Call name="addAliasCheck">

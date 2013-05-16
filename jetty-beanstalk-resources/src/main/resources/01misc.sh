@@ -19,7 +19,7 @@ set -x
 
 function preinit() {
 
-JETTY_HOME=/opt/jetty-8
+JETTY_HOME=/opt/jetty-9
 JETTY_PID=/var/run/jetty.pid
 
 # Apache config
@@ -47,7 +47,7 @@ EOELASTICBEANSTALKSITE
 # Jetty logging
 #
 cat > /etc/logrotate.conf.elasticbeanstalk <<EOLOGROTATE
-/opt/jetty-8/logs/jetty.log {
+/opt/jetty-9/logs/*log {
     size 1M
     missingok
     rotate 5

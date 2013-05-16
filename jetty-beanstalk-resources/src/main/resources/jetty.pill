@@ -11,9 +11,9 @@ Bluepill.application('jetty', :log_file => "/var/log/eb-bluepill.log") do |app|
   end    
 
   app.process('jetty') do |jetty_process|
-    jetty_process.start_command = '/etc/init.d/jetty8 start'
-    jetty_process.stop_command = '/etc/init.d/jetty8 stop'
-    jetty_process.restart_command = '/etc/init.d/jetty8 restart'
+    jetty_process.start_command = '/etc/init.d/jetty9 start'
+    jetty_process.stop_command = '/etc/init.d/jetty9 stop'
+    jetty_process.restart_command = '/etc/init.d/jetty9 restart'
     jetty_process.pid_file = '/var/run/jetty.pid'
     jetty_process.start_grace_time = 60.seconds
     jetty_process.stop_grace_time = 60.seconds
